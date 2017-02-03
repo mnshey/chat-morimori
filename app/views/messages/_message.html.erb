@@ -1,0 +1,321 @@
+<div class="message clearfix">
+
+	  <div class="message_profile-pic"><%= image_tag message.user.image %></div>
+		  <a href="" class="message_username"><%= message.user.username %></a>
+		<div class="message_cube">
+		  <span class="message_star"></span>
+		  <a href="" class="message_content"><span><%= message.content %></span></a>
+	</div>
+</div>
+<span class="message_timestamp"><%= message.created_at.strftime("%H:%M") %></span>
+
+		  <div class="clearfix"></div>
+
+	<a class="my_account_name" style="display: none;"><%= @my_account_name %></a>
+
+	<script>
+
+	
+	aaa = document.getElementsByClassName("message_content");
+	bbb = aaa[aaa.length-1];
+	ccc = bbb.text
+
+	aaa_3 = document.getElementsByClassName("message_username");
+	bbb_3 = aaa_3[aaa_3.length-1];
+	ccc_3 = bbb_3.text
+
+	aaa_2 = document.getElementsByClassName("my_account_name");
+	bbb_2 = aaa_2[aaa_2.length-1];
+	ccc_2 = bbb_2.text
+	
+
+	aaa_4 = document.getElementsByClassName("message_cube");
+	bbb_4 = aaa_4[aaa_4.length-1];
+	ccc_4 = bbb_4.text
+
+
+	aaa_5 = document.getElementsByClassName("message_timestamp");
+	bbb_5 = aaa_5[aaa_5.length-1];
+	ccc_5 = bbb_5.text
+
+
+	aaa_6 = document.getElementsByClassName("message_profile-pic");
+	bbb_6 = aaa_6[aaa_6.length-1];
+	ccc_6 = bbb_6.text
+
+	if (ccc_3 == ccc_2 ) {
+		bbb_3.className = "my_message_name"
+		bbb.className = "my_message_content"
+		bbb_4.className = "my_message_cube"
+		bbb_5.className = "my_message_timestamp"
+		bbb_6.className = "my_message_profile-pic"
+	}
+
+	if (ccc.match("_1.png")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_2.png")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if  (ccc.match("_3.png")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_4.png")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_5.png")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_6.png")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_7.png")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_8.png")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_9.png")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_10.png")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}
+
+
+	if (ccc.match("_1.PNG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_2.PNG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if  (ccc.match("_3.PNG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_4.PNG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_5.PNG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_6.PNG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_7.PNG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_8.PNG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_9.PNG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_10.PNG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}
+
+
+	if (ccc.match("_1.jpg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_2.jpg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if  (ccc.match("_3.jpg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_4.jpg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_5.jpg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_6.jpg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_7.jpg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_8.jpg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_9.jpg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_10.jpg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}
+
+
+
+	if (ccc.match("_1.JPG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_2.JPG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if  (ccc.match("_3.JPG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_4.JPG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_5.JPG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_6.JPG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_7.JPG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_8.JPG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_9.JPG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_10.JPG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}
+
+
+		if (ccc.match("_1.jpeg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_2.jpeg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if  (ccc.match("_3.jpeg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_4.jpeg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_5.jpeg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_6.jpeg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_7.jpeg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_8.jpeg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_9.jpeg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_10.jpeg")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}
+
+
+
+		if (ccc.match("_1.JPEG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_2.JPEG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if  (ccc.match("_3.JPEG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_4.JPEG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_5.JPEG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_6.JPEG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_7.JPEG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_8.JPEG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_9.JPEG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_10.JPEG")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}
+
+
+		if (ccc.match("_1.gif")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_2.gif")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if  (ccc.match("_3.gif")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_4.gif")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_5.gif")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_6.gif")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_7.gif")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_8.gif")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_9.gif")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_10.gif")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}
+
+
+
+
+		if (ccc.match("_1.GIF")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_2.GIF")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if  (ccc.match("_3.GIF")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_4.GIF")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_5.GIF")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	} else if (ccc.match("_6.GIF")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_7.GIF")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_8.GIF")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_9.GIF")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}else if (ccc.match("_10.GIF")) {
+		bbb.innerHTML = "<div class='stamp'><img src='" + ccc + "'><div>";
+	console.log(bbb.text);
+	}
+
+</script>

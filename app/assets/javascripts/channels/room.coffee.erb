@@ -1,0 +1,138 @@
+App.room = App.cable.subscriptions.create "RoomChannel",
+  connected: ->
+    # Called when the subscription is ready for use on the server
+
+  disconnected: ->
+    # Called when the subscription has been terminated by the server
+
+  received: (data) ->
+    # Called when there's incoming data on the websocket for this channel
+    $messages = $('#messages')
+
+    $messages.append data
+    $messages.scrollTop $messages.prop('scrollHeight')
+    $('body').delay(0).animate { scrollTop: $(document).height() }, 0
+
+    array = $('.message_username')
+    aaa = array[array.length-1]
+
+    if $('#myname').html() == aaa.text then aaa.className = "my_message_name"
+
+    array_3 = $('.message_timestamp')
+    ccc = array_3[array_3.length-1]
+
+    if $('#myname').html() == aaa.text then ccc.className = "my_message_timestamp"
+
+
+    array_4 = $('.message_cube')
+    ddd = array_4[array_4.length-1]
+     
+    if $('#myname').html() == aaa.text then ddd.className = "my_message_cube"
+
+
+    array_5 = $('.message_profile-pic')
+    eee = array_5[array_5.length-1]
+
+    if $('#myname').html() == aaa.text then eee.className = "my_message_profile-pic"
+
+    array_2 = $('.message_content')
+    bbb = array_2[array_2.length-1]
+
+    if $('#myname').html() == aaa.text then bbb.className = "my_message_content"
+
+    if bbb.text.match("_1.png") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_2.png") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_3.png") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_4.png") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_5.png") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_6.png") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_7.png") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_8.png") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_9.png") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_10.png") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+
+
+    if bbb.text.match("_1.PNG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_2.PNG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_3.PNG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_4.PNG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_5.PNG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_6.PNG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_7.PNG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_8.PNG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_9.PNG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_10.PNG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+
+
+    if bbb.text.match("_1.jpg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_2.jpg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_3.jpg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_4.jpg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_5.jpg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_6.jpg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_7.jpg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_8.jpg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_9.jpg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_10.jpg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+
+
+    if bbb.text.match("_1.JPG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_2.JPG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_3.JPG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_4.JPG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_5.JPG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_6.JPG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_7.JPG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_8.JPG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_9.JPG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_10.JPG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+
+
+    if bbb.text.match("_1.jpeg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_2.jpeg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_3.jpeg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_4.jpeg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_5.jpeg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_6.jpeg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_7.jpeg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_8.jpeg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_9.jpeg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_10.jpeg") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+
+
+    if bbb.text.match("_1.JPEG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_2.JPEG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_3.JPEG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_4.JPEG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_5.JPEG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_6.JPEG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_7.JPEG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_8.JPEG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_9.JPEG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_10.JPEG") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+
+    if bbb.text.match("_1.gif") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_2.gif") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_3.gif") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_4.gif") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_5.gif") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_6.gif") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_7.gif") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_8.gif") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_9.gif") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_10.gif") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+
+    if bbb.text.match("_1.GIF") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_2.GIF") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_3.GIF") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_4.GIF") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_5.GIF") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_6.GIF") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_7.GIF") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_8.GIF") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_9.GIF") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+    if bbb.text.match("_10.GIF") then bbb.innerHTML = "<img src='http://localhost:3000#{bbb.text}'>"
+
+
+  speak: (message) ->
+    @perform 'speak', message: message

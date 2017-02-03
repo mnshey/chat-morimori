@@ -1,0 +1,43 @@
+<div id="newaccountmain">
+
+ <% require 'securerandom' %>
+ <% @ranmail = "#{SecureRandom.hex(8)}@gmail.com" %>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    ニックネーム
+    <%= f.text_field :username, autofocus: true %>
+  </div>
+
+
+  <div class="field">
+        学籍番号
+    <%= f.text_field :mynumber, autofocus: true %>
+  </div>
+
+
+  <div class="field" style="display: none;">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, value:@ranmail%>
+  </div>
+
+  <div class="field" style="display: none;">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off", value:@ranmail %>
+  </div>
+
+  <div class="field" style="display: none;">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off", value:@ranmail %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "登録" %>
+  </div>
+<% end %>
+</div>

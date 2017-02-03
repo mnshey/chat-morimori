@@ -1,0 +1,199 @@
+<% content_for :title, 'admin | Action Cable Chat' %>
+<style>
+body {
+  background-color:#7292C1;
+}
+</style>
+<script>
+$(function(){
+$(".btn-stamp").click(function(){
+$(".stamplist").toggle();
+$('body').delay(0).animate({
+    scrollTop: $(document).height()
+  }, 500);
+});
+});
+
+
+$(function(){
+$(".setting-button").click(function(){
+$(".setting").slideToggle();
+});
+});
+
+$(function() {
+        $('.userstamptab li').click(function() {
+            var index = $('.userstamptab  li').index(this);
+            $('.userstamp li').css('display', 'none');
+            $('.userstamp li').eq(index).css('display', 'block');
+            $('.userstamptab  li').removeClass('select');
+            $(this).addClass('select')
+        });
+    });
+
+</script>
+
+<div class="header">
+
+<div class="seutton"><img src=""></div>
+<div class="setting-button"><img src="<%= asset_path "setting.png" %>" /></div>
+<h1>グループチャット</h1>
+</div>
+<div class="setting">
+  <ul>
+  <li><%= link_to destroy_user_session_path do %><img src="<%= asset_path 'logout.png' %>" /><% end %></li>
+  <li></li>
+  <li><%= link_to edit_user_registration_path do %><img src="<%= asset_path 'set.png' %>" /><% end %></li>
+  
+  </ul>
+</div>
+<div class="main">
+
+  <div id="myname" style="display: none;"><%= current_user.username %></div>
+  <div id="myjpg_1" style="display: none;"><%= current_user.stamp_1 %></div>
+  <div id="myjpg_2" style="display: none;"><%= current_user.stamp_2 %></div>
+  <div id="myjpg_3" style="display: none;"><%= current_user.stamp_3 %></div>
+  <div id="myjpg_4" style="display: none;"><%= current_user.stamp_4 %></div>
+  <div id="myjpg_5" style="display: none;"><%= current_user.stamp_5 %></div>
+  <div id="myjpg_6" style="display: none;"><%= current_user.stamp_6 %></div>
+  <div id="myjpg_7" style="display: none;"><%= current_user.stamp_7 %></div>
+  <div id="myjpg_8" style="display: none;"><%= current_user.stamp_8 %></div>
+  <div id="myjpg_9" style="display: none;"><%= current_user.stamp_9 %></div>
+  <div id="myjpg_10" style="display: none;"><%= current_user.stamp_10 %></div>
+
+  <div class="message-history" id="messages">
+   <%= render @messages %>
+  </div>
+
+
+
+<div id="chat-box">
+
+
+  <div class="input-box_2">
+  <div class="btn-stamp"><img src="<%= asset_path "smail.png" %>" /></div>
+  
+    <input type="text" class="input-box_text" id="message_input" value=""/>
+    <input type="hidden" class="input-box_text" id="message_input_1" value="<%= current_user.stamp_1%>"/>
+    <input type="hidden" class="input-box_text" id="message_input_2" value="<%= current_user.stamp_2%>"/>
+    <input type="hidden" class="input-box_text" id="message_input_3" value="<%= current_user.stamp_3%>"/>
+    <input type="hidden" class="input-box_text" id="message_input_4" value="<%= current_user.stamp_4%>"/>
+    <input type="hidden" class="input-box_text" id="message_input_5" value="<%= current_user.stamp_5%>"/>
+    <input type="hidden" class="input-box_text" id="message_input_6" value="<%= current_user.stamp_6%>"/>
+    <input type="hidden" class="input-box_text" id="message_input_7" value="<%= current_user.stamp_7%>"/>
+    <input type="hidden" class="input-box_text" id="message_input_8" value="<%= current_user.stamp_8%>"/>
+    <input type="hidden" class="input-box_text" id="message_input_9" value="<%= current_user.stamp_9%>"/>
+    <input type="hidden" class="input-box_text" id="message_input_10" value="<%= current_user.stamp_10%>"/>
+  </div>
+  </div>
+
+<div class="stamplist" style="display:none;">
+  <div class="slider-wrapper">
+  <div class="userstamp">
+  <li class="show">
+    <div class="slider">
+      <div class="unit">
+        <%= image_tag (current_user.stamp_1) %>
+        <button id="button_1">スタンプ_1</button>
+      </div><!-- /.unit -->
+
+      <div class="unit">
+        <%= image_tag (current_user.stamp_2) %>
+        <button id="button_2">スタンプ_2</button>
+      </div><!-- /.unit -->
+
+      <div class="unit">
+        <%= image_tag (current_user.stamp_3) %>
+        <button id="button_3">スタンプ_3</button>
+        </div>
+      <div class="unit">
+        <%= image_tag (current_user.stamp_4) %>
+        <button id="button_4">スタンプ_4</button>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (current_user.stamp_5) %>
+        <button id="button_5">スタンプ_5</button>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (current_user.stamp_6) %>
+        <button id="button_6">スタンプ_6</button>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (current_user.stamp_7) %>
+        <button id="button_7">スタンプ_7</button>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (current_user.stamp_8) %>
+        <button id="button_8">スタンプ_8</button>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (current_user.stamp_9) %>
+        <button id="button_9">スタンプ_9</button>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (current_user.stamp_10) %>
+        <button id="button_10">スタンプ_10</button>
+      </div><!-- /.unit -->
+    </div><!-- /.slider -->
+  </li>
+  <% @useraccount_not_me.each do |user| %>
+  <li class="hide">
+    
+    <div class="slider">
+      <div class="unit">
+        <%= image_tag (user.stamp_1) %>
+      </div><!-- /.unit -->
+
+      <div class="unit">
+        <%= image_tag (user.stamp_2) %>
+      </div><!-- /.unit -->
+
+      <div class="unit">
+        <%= image_tag (user.stamp_3) %>
+        </div>
+      <div class="unit">
+        <%= image_tag (user.stamp_4) %>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (user.stamp_5) %>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (user.stamp_6) %>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (user.stamp_7) %>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (user.stamp_8) %>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (user.stamp_9) %>
+      </div><!-- /.unit -->
+      <div class="unit">
+        <%= image_tag (user.stamp_10) %>
+      </div><!-- /.unit -->
+    </div><!-- /.slider -->
+
+  </li>
+  <% end %>
+
+
+  </div>
+
+<div class="clearfix"></div>
+
+  <div class="userstamptab">
+    <ul>
+    <li><%= image_tag current_user.stamp_1 %></li>
+    <% @useraccount_not_me.each do |user| %>
+    <li><%= image_tag user.stamp_1 %></li>
+    <% end %>
+    </ul>
+  </div>
+
+</div><!-- /.slider-wrapper -->
+
+</div>
+</div>
+
+

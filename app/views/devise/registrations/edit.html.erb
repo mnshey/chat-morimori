@@ -1,0 +1,61 @@
+<div class="header">
+<h1>プロフィール設定</h1>
+</div>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+<div class="stamp_edit">
+
+    <div class="field_edit">
+プロフィール画像 <%= f.file_field :image %>
+    </div><br />
+
+<div class="field_edit">
+1個目のスタンプ <%= f.file_field :stamp_1 %>
+    </div>
+
+<div class="field_edit">
+2個目のスタンプ <%= f.file_field :stamp_2 %>
+    </div>
+
+<div class="field_edit">
+3個目のスタンプ <%= f.file_field :stamp_3 %>
+    </div>
+
+<div class="field_edit">
+4個目のスタンプ <%= f.file_field :stamp_4 %>
+    </div>
+
+<div class="field_edit">
+5個目のスタンプ <%= f.file_field :stamp_5 %>
+    </div>
+
+<div class="field_edit">
+6個目のスタンプ <%= f.file_field :stamp_6 %>
+    </div>
+
+<div class="field_edit">
+7個目のスタンプ <%= f.file_field :stamp_7 %>
+    </div>
+
+<div class="field_edit">
+8個目のスタンプ <%= f.file_field :stamp_8 %>
+    </div>
+
+<div class="field_edit">
+9個目のスタンプ <%= f.file_field :stamp_9 %>
+    </div>
+
+<div class="field_edit">
+10個目のスタンプ <%= f.file_field :stamp_10 %>
+    </div>
+
+
+
+  <div class="actions_edit">
+    <%= f.submit "保存" %>
+  </div>
+    </div>
+<% end %>
+
+

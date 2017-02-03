@@ -1,0 +1,188 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.setting li {
+width:25vw;
+height:25vw;
+float: left;
+list-style: none;
+}
+
+.setting li + li {
+margin-left: 12vw;
+
+  }
+
+.setting li img {
+
+width:18vw;
+padding:3.5vw;
+-webkit-transform:rotate(180deg);
+  }
+.setting {
+  border-top:1px solid #F4F5F9;
+  width:100%;
+  height:25vw;
+  display: none;
+  background-color: #263147;
+  position: fixed;
+  top:15vw;
+  z-index: 3;
+}
+.select {
+  background-color: #DCDEE3;
+}
+ .show {
+  display: block;
+ }
+
+ .hide {
+  display: none;
+ }
+
+#error_explanation {
+  color:#FFF;
+  font-size:2vw;
+  text-align:center;
+  display: none;
+}
+ .header {
+
+width:100vw;
+height:15vw;
+position: fixed;
+top:0;
+z-index: 3;
+  background-color:#263147;
+}
+
+.header h1 {
+  text-align: center;
+  font-size:5vw;
+  color:#FFF;
+  font-family:Meiryo, sans-serif;
+  line-height: 3em; 
+  font-weight: normal;
+}
+.stamp_edit {
+
+  margin-top:20vw;
+  margin-bottom:35vw;
+  margin-left:20vw;
+}
+.main {
+
+  margin-top:20vw;
+  margin-bottom:10vw;
+}
+#chat-box{
+	width:100%;
+	height:12vw;
+	background-color:#F4F5F9;
+  position: fixed;
+  bottom:0;
+  z-index: 3;
+}
+
+.userstamptab {
+
+width:100%;
+height:80px;
+  border-top: 1px solid #BBCADF;
+margin-top:8px;
+padding-top:10px;
+
+}
+.userstamptab li {
+float:left;
+list-style: none;
+margin-bottom:10px;
+margin-left:10px;
+}
+
+
+.userstamptab li img {
+
+  width:70px;
+  height:70px;
+  border-radius:5px;
+} 
+.slider-wrapper {
+  width:100vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: #E8E9ED;
+  z-index:3;
+  margin-bottom:12vw;
+}
+
+.slider {
+  width: 100vw;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider > * {
+  -webkit-transform: translateZ(0px);
+}
+
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+  height: 0 !important;
+}
+.unit button {
+
+  width: 18.5vw;
+  height:18.5vw;
+  position:relative;
+  z-index:2;
+  opacity: 0;
+}
+.unit {
+  float: left;
+  width: 18.5vw;
+  height:18.5vw;
+  margin-top:7px !important;
+  margin-left:7px !important;
+  background: #E8E9ED;
+  position: relative;
+	border-radius: 5px;
+	z-index: 2;
+	overflow: hidden;
+
+}
+.unit img {
+
+  width: auto;
+	height:18.5vw;
+display: block;
+position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+     -moz-transform: translate3d(-50%, -50%, 0);
+           -ms-transform: translate(-50%, -50%);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.unit:first-child {
+  margin: 0;
+}
+
+.unit .img {
+  text-align: center;
+}
