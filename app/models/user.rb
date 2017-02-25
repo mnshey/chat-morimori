@@ -5,9 +5,13 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
     validates :mynumber,
+    uniqueness: true,
     presence: true
+    
     validates :username,
+    uniqueness: true,
     presence: true
+    
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
