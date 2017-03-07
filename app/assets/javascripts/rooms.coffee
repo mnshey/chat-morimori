@@ -12,6 +12,8 @@ $(document).on 'keypress', '#message_input', (e) ->
     e.target.value = ''
     e.preventDefault()
 
+
+
 $(document).on 'click', '#button_1', (event) ->
   value = $('#message_input_1').val()
   App.room.speak(value)

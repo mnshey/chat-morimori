@@ -11,6 +11,7 @@ $(".stamplist").toggle();
 $('body').delay(0).animate({
     scrollTop: $(document).height()
   }, 500);
+
 });
 });
 
@@ -31,11 +32,11 @@ $(function() {
         });
     });
 
+
 </script>
 
 <div class="header">
 
-<div class="seutton"><img src=""></div>
 <div class="setting-button"><img src="<%= asset_path "setting.png" %>" /></div>
 <h1>グループチャット</h1>
 </div>
@@ -47,8 +48,8 @@ $(function() {
   
   </ul>
 </div>
-<div class="main">
 
+<div class="main">
   <div id="myname" style="display: none;"><%= current_user.username %></div>
   <div id="myjpg_1" style="display: none;"><%= current_user.stamp_1 %></div>
   <div id="myjpg_2" style="display: none;"><%= current_user.stamp_2 %></div>
@@ -60,9 +61,8 @@ $(function() {
   <div id="myjpg_8" style="display: none;"><%= current_user.stamp_8 %></div>
   <div id="myjpg_9" style="display: none;"><%= current_user.stamp_9 %></div>
   <div id="myjpg_10" style="display: none;"><%= current_user.stamp_10 %></div>
-
   <div class="message-history" id="messages">
-   <%= render @messages %>
+   <% render @messages %>
   </div>
 
 
