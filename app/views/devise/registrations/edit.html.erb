@@ -1,61 +1,201 @@
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
 <div class="header">
+<div class="setting-button"><img src="%" width="250px" style="opacity: 0;"/></div>
 <h1>プロフィール設定</h1>
 </div>
+
+<div class="displayBox">
+
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
 <div class="stamp_edit">
+<div id="preview1" class="editImage_avatar"><img id="uploadFile_preview_0"></div>
 
-    <div class="field_edit">
-プロフィール画像 <%= f.file_field :image %>
-    </div><br />
-
-<div class="field_edit">
-1個目のスタンプ <%= f.file_field :stamp_1 %>
+    <div class="field_edit_avatar">
+<div id="selectButton_z2_0" class="stampSelectbutton_z2_0">Avatar</div><%= f.file_field :image , :class=>"stampSelectbutton_0"%>
     </div>
 
 <div class="field_edit">
-2個目のスタンプ <%= f.file_field :stamp_2 %>
+<h2>怒っているスタンプ</h2>
+<div id="preview" class="editImage"><img id="uploadFile_preview"></div>
+<br/><div id="selectButton_z2_1" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_1 , :class=>"stampSelectbutton"%>
+</div>
+
+<div class="field_edit">
+<h2>怒っているスタンプ</h2>
+<div id="preview" class="editImage"><img id="uploadFile_preview_2"></div>
+<br/><div id="selectButton_z2_2" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_2 , :class=>"stampSelectbutton"%>
+</div>
+
+<div class="field_edit">
+<h2>怒っているスタンプ</h2>
+<div id="preview" class="editImage"><img id="uploadFile_preview_3"></div>
+<br/><div id="selectButton_z2_3" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_3  , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
-3個目のスタンプ <%= f.file_field :stamp_3 %>
+<h2>怒っているスタンプ</h2>
+<div id="preview" class="editImage"><img id="uploadFile_preview_4"></div>
+<br/><div id="selectButton_z2_4" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_4  , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
-4個目のスタンプ <%= f.file_field :stamp_4 %>
+<h2>怒っているスタンプ</h2>
+<div id="preview" class="editImage"><img id="uploadFile_preview_5"></div>
+<br/><div id="selectButton_z2_5" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_5 , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
-5個目のスタンプ <%= f.file_field :stamp_5 %>
+<h2>怒っているスタンプ</h2>
+<div id="preview" class="editImage"><img id="uploadFile_preview_6"></div>
+<br/><div id="selectButton_z2_6" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_6 , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
-6個目のスタンプ <%= f.file_field :stamp_6 %>
+<h2>怒っているスタンプ</h2>
+<div id="preview" class="editImage"><img id="uploadFile_preview_7"></div>
+<br/><div id="selectButton_z2_7" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_7 , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
-7個目のスタンプ <%= f.file_field :stamp_7 %>
+<h2>怒っているスタンプ</h2>
+<div id="preview" class="editImage"><img id="uploadFile_preview_8"></div>
+<br/><div id="selectButton_z2_8" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_8 , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
-8個目のスタンプ <%= f.file_field :stamp_8 %>
+<h2>怒っているスタンプ</h2>
+<div id="preview" class="editImage"><img id="uploadFile_preview_9"></div>
+<br/><div id="selectButton_z2_9" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_9  , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
-9個目のスタンプ <%= f.file_field :stamp_9 %>
+<h2>怒っているスタンプ</h2>
+<div id="preview" class="editImage"><img id="uploadFile_preview_10"></div>
+<br/><div id="selectButton_z2_10" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_10  , :class=>"stampSelectbutton"%>
     </div>
 
-<div class="field_edit">
-10個目のスタンプ <%= f.file_field :stamp_10 %>
-    </div>
 
 
-
-  <div class="actions_edit">
+  <div class="actions_edit">保存
     <%= f.submit "保存" %>
   </div>
     </div>
 <% end %>
 
+
+    </div>
+
+<script type="text/javascript">
+   jQuery(function($){
+   document.getElementById("user_image").onchange = function () {
+       var reader  = new FileReader();
+        reader.addEventListener('load', function(e) {
+      document.getElementById("uploadFile_preview_0").setAttribute("src",e.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.getElementById("selectButton_z2_0").style.backgroundColor = "#06BF3F";
+    document.getElementById("selectButton_z2_0").style.color = "#FFF";
+    }
+
+
+   document.getElementById("user_stamp_1").onchange = function () {
+       var reader  = new FileReader();
+        reader.addEventListener('load', function(e) {
+      document.getElementById("uploadFile_preview").setAttribute("src",e.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.getElementById("selectButton_z2_1").style.backgroundColor = "#76B3FA";
+    }
+
+       document.getElementById("user_stamp_2").onchange = function () {
+       var reader  = new FileReader();
+        reader.addEventListener('load', function(e) {
+      document.getElementById("uploadFile_preview_2").setAttribute("src",e.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.getElementById("selectButton_z2_2").style.backgroundColor = "#76B3FA";
+    }
+
+           document.getElementById("user_stamp_3").onchange = function () {
+       var reader  = new FileReader();
+        reader.addEventListener('load', function(e) {
+      document.getElementById("uploadFile_preview_3").setAttribute("src",e.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.getElementById("selectButton_z2_3").style.backgroundColor = "#76B3FA";
+    }
+
+           document.getElementById("user_stamp_4").onchange = function () {
+       var reader  = new FileReader();
+        reader.addEventListener('load', function(e) {
+      document.getElementById("uploadFile_preview_4").setAttribute("src",e.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.getElementById("selectButton_z2_4").style.backgroundColor = "#76B3FA";
+    }
+
+           document.getElementById("user_stamp_5").onchange = function () {
+       var reader  = new FileReader();
+        reader.addEventListener('load', function(e) {
+      document.getElementById("uploadFile_preview_5").setAttribute("src",e.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.getElementById("selectButton_z2_5").style.backgroundColor = "#76B3FA";
+    }
+
+           document.getElementById("user_stamp_6").onchange = function () {
+       var reader  = new FileReader();
+        reader.addEventListener('load', function(e) {
+      document.getElementById("uploadFile_preview_6").setAttribute("src",e.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.getElementById("selectButton_z2_6").style.backgroundColor = "#76B3FA";
+    }
+
+           document.getElementById("user_stamp_7").onchange = function () {
+       var reader  = new FileReader();
+        reader.addEventListener('load', function(e) {
+      document.getElementById("uploadFile_preview_7").setAttribute("src",e.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.getElementById("selectButton_z2_7").style.backgroundColor = "#76B3FA";
+    }
+
+           document.getElementById("user_stamp_8").onchange = function () {
+       var reader  = new FileReader();
+        reader.addEventListener('load', function(e) {
+      document.getElementById("uploadFile_preview_8").setAttribute("src",e.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.getElementById("selectButton_z2_8").style.backgroundColor = "#76B3FA";
+    }
+
+           document.getElementById("user_stamp_9").onchange = function () {
+       var reader  = new FileReader();
+        reader.addEventListener('load', function(e) {
+      document.getElementById("uploadFile_preview_9").setAttribute("src",e.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.getElementById("selectButton_z2_9").style.backgroundColor = "#76B3FA";
+    }
+
+               document.getElementById("user_stamp_10").onchange = function () {
+       var reader  = new FileReader();
+        reader.addEventListener('load', function(e) {
+      document.getElementById("uploadFile_preview_10").setAttribute("src",e.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+    document.getElementById("selectButton_z2_10").style.backgroundColor = "#76B3FA";
+    }
+});
+
+</script>
 
