@@ -127,6 +127,9 @@ opacity:0;
 .stamp {
   background-color:#7292C1;
 }
+.stamp img{
+  background-color:#7292C1;
+}
 
 .btn-stamp {
   width:8vw;
@@ -152,6 +155,7 @@ opacity:0;
 }
 .message_username {
   float:left;
+  width:52px;
 }
 
 .my_message_name {
@@ -203,6 +207,8 @@ opacity:0;
 .message_content img {
   width:200px;
   height:auto;
+    position: relative;
+  left:-20px;
 }
 .my_message_content {
   
@@ -219,7 +225,6 @@ opacity:0;
 }
 .my_message_content img {
   width:200px;
-
   height:auto;
 }
 
@@ -809,6 +814,9 @@ opacity:0;
   background-color:#7292C1;
 }
 
+.stamp img{
+  background-color:#7292C1;
+}
 .btn-stamp {
   width:8vw;
   height:8vw;
@@ -833,6 +841,8 @@ opacity:0;
 }
 .message_username {
   float:left;
+  width:52px;
+
 }
 
 .my_message_name {
@@ -884,6 +894,8 @@ opacity:0;
 .message_content img {
   width:200px;
   height:auto;
+    position: relative;
+  left:-20px;
 }
 .my_message_content {
   
@@ -1485,6 +1497,10 @@ opacity:0;
   background-color:#7292C1;
 }
 
+.stamp img{
+  background-color:#7292C1;
+}
+
 .btn-stamp {
   width:8vw;
   height:8vw;
@@ -1509,6 +1525,8 @@ opacity:0;
 }
 .message_username {
   float:left;
+  width:52px;
+
 }
 
 .my_message_name {
@@ -1560,6 +1578,8 @@ opacity:0;
 .message_content img {
   width:200px;
   height:auto;
+    position: relative;
+  left:-20px;
 }
 .my_message_content {
   
@@ -2156,6 +2176,10 @@ opacity:0;
   background-color:#7292C1;
 }
 
+.stamp img{
+  background-color:#7292C1;
+}
+
 .btn-stamp {
   width:8vw;
   height:8vw;
@@ -2180,6 +2204,8 @@ opacity:0;
 }
 .message_username {
   float:left;
+  width:52px;
+
 }
 
 .my_message_name {
@@ -2219,8 +2245,8 @@ opacity:0;
   margin-left:30px;
   margin-right:30px;
   line-height:2.3em;
-  color:#000;
-  font-size:4vw;
+  color:#000;  font-size:25px;
+
 }
 
 .message_content a {
@@ -2229,6 +2255,8 @@ opacity:0;
 }
 
 .message_content img {
+    position: relative;
+  left:-20px;
   width:200px;
   height:auto;
 }
@@ -2243,7 +2271,7 @@ opacity:0;
   margin-right:30px;
   line-height:2.3em;
   color:#000;
-  font-size:3vw;
+  font-size:25px;
 }
 .my_message_content img {
   width:200px;
@@ -2841,6 +2869,9 @@ opacity:0;
 .stamp {
   background-color:#7292C1;
 }
+.stamp img{
+  background-color:#7292C1;
+}
 
 .btn-stamp {
   width:40px;
@@ -2876,7 +2907,12 @@ font-size:14px;
 }
 .message_username {
   float:left;
+    width:52px;
+
 }
+
+
+
 
 .my_message_name {
   float:right;
@@ -2925,8 +2961,11 @@ font-size:14px;
 }
 
 .message_content img {
+  position: relative;
+  left:-20px;
   width:200px;
   height:auto;
+
 }
 .my_message_content {
   
@@ -3401,6 +3440,16 @@ position: absolute;
 
 
 }
-
-
+.balloon {
+  position: relative;
+}
+.balloon img {
+  width:30%;
+  -webkit-transform:rotate(180deg);
+     -moz-transform:rotate(180deg);
+           -ms-transform:rotate(180deg);
+          transform:rotate(180deg);
+  position: absolute;
+  top:25px;
+}
 

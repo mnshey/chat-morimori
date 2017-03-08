@@ -9,6 +9,7 @@ class User < ApplicationRecord
     presence: true
     
     validates :username,
+    length: { in: 5..8 } ,
     uniqueness: true,
     presence: true
     

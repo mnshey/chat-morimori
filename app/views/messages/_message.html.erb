@@ -1,7 +1,7 @@
 <div class="message clearfix">
 
 	  <div class="message_profile-pic"><%= image_tag message.user.image %></div>
-		  <a href="" class="message_username"><%= message.user.username %></a>
+		  <a href="" class="message_username"><%= message.user.username %><div class="balloon"><%= image_tag 'hukida-left.png' %></div></a>
 		<div class="message_cube">
 		  <span class="message_star"></span>
 		  <a href="" class="message_content"><span><%= message.content %></span></a>
