@@ -605,6 +605,18 @@ bottom:12vw;
   overflow: hidden;
 
 }
+
+.unit .button_name {
+  position: relative;
+  top:-25px;
+  width:18.5vw;
+  height:25px;
+  background-color: rgba(0,0,0,0.3);
+  text-align: center;
+  color: #FFF;
+  font-weight: normal;
+}
+
 .unit img {
 
   width: auto;
@@ -1273,6 +1285,18 @@ bottom:12vw;
   overflow: hidden;
 
 }
+
+.unit .button_name {
+  position: relative;
+  top:-25px;
+  width:18.5vw;
+  height:25px;
+  background-color: rgba(0,0,0,0.3);
+  text-align: center;
+  color: #FFF;
+  font-weight: normal;
+}
+
 .unit img {
 
   width: auto;
@@ -1938,6 +1962,16 @@ bottom:12vw;
   overflow: hidden;
 
 }
+.unit .button_name {
+  position: relative;
+  top:-25px;
+  width:18.5vw;
+  height:25px;
+  background-color: rgba(0,0,0,0.3);
+  text-align: center;
+  color: #FFF;
+  font-weight: normal;
+}
 .unit img {
 
   width: auto;
@@ -2581,16 +2615,16 @@ bottom:12vw;
 }
 .unit button {
 
-  width: 18.5vw;
-  height:18.5vw;
+  width: 19.3vw;
+  height: 19.3vw;
   position:relative;
   z-index:2;
   opacity: 0;
 }
 .unit {
   float: left;
-  width: 18.5vw;
-  height:18.5vw;
+  width:  19.3vw;
+  height: 19.3vw;
   margin-top:7px !important;
   margin-left:7px !important;
   background: #E8E9ED;
@@ -2600,10 +2634,22 @@ bottom:12vw;
   overflow: hidden;
 
 }
+
+.unit .button_name {
+  position: relative;
+  top:-25px;
+  width:19.3vw;
+  height:25px;
+  background-color: rgba(0,0,0,0.3);
+  text-align: center;
+  color: #FFF;
+  font-weight: normal;
+}
+
 .unit img {
 
   width: auto;
-  height:18.5vw;
+  height: 19.3vw;
 display: block;
 position: absolute;
   min-width: 100%;
@@ -2797,6 +2843,7 @@ opacity:0;
   border-radius:5px;
   background-color:#F4F5F9;
   float:left;
+
   margin-left:20px;
 }
 
@@ -2804,6 +2851,8 @@ opacity:0;
 .btn-stamp img {
   width:100%;
   display: block;
+      margin-top: 10px;
+    margin-left: 10px;
   }
 
 .input-box_text {
@@ -3308,12 +3357,23 @@ bottom:60px;
   border-radius: 5px;
   z-index: 2;
   overflow: hidden;
-
 }
+
+.unit .button_name {
+  position: relative;
+  top:-25px;
+  width:100px;
+  height:25px;
+  background-color: rgba(0,0,0,0.3);
+  text-align: center;
+  color: #FFF;
+  font-weight: normal;
+}
+
 .unit img {
 
   width: auto;
-  height:18.5vw;
+  height:100px;
 display: block;
 position: absolute;
   min-width: 100%;
