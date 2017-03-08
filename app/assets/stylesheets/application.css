@@ -2754,11 +2754,16 @@ a {
 
 #newaccountmain {
   background-color:#00C039;
-  height:100vh;
+  height:100%;
 }
 
 .final-form {
-  padding-top:30vw;
+margin-top:-20vw;
+
+    -moz-transform: scale(0.4,0.4);
+-webkit-transform: scale(0.4,0.4);
+-o-transform: scale(0.4,0.4);
+-ms-transform: scale(0.4,0.4);
 }
 
 .final-form h1 {

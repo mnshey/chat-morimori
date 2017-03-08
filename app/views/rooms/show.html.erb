@@ -62,7 +62,7 @@ $(function() {
   <div id="myjpg_9" style="display: none;"><%= current_user.stamp_9 %></div>
   <div id="myjpg_10" style="display: none;"><%= current_user.stamp_10 %></div>
   <div class="message-history" id="messages">
-   <% render @messages %>
+   <%= render @messages %>
   </div>
 
 
@@ -152,7 +152,7 @@ $(function() {
         <button id="button_10">スタンプ_10</button>
         <div class="button_name">怒り</div>
       </div><!-- /.unit -->
-      
+
     </div><!-- /.slider -->
   </li>
   <% @useraccount_not_me.each do |user| %>
