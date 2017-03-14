@@ -3339,7 +3339,6 @@ z-index: 3;
 #chat-box{
   width:100%;
   height:60px;
-  background-color:#F4F5F9;
   position: fixed;
   bottom:0;
   z-index: 4;
