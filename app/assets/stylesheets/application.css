@@ -15,6 +15,7 @@
  */
 
 
+
 @media only screen and (min-device-width:320px) and (max-device-width:568px) {
 
 
@@ -125,17 +126,17 @@ top:-13vw;
 opacity:0;
 }
 .stamp {
-  background-color:#7292C1;
+  background-color:#FFF;
 }
 .stamp img{
-  background-color:#7292C1;
+  background-color:#FFF;
 }
 
 .btn-stamp {
   width:8vw;
   height:8vw;
   border-radius:5px;
-  background-color:#F4F5F9;
+  background-color:#FFFFFF;
   float:left;
   margin-left:2.5vw;
   margin-top:2vw;
@@ -156,11 +157,14 @@ opacity:0;
 .message_username {
   float:left;
   width:52px;
+color:#000;
 }
 
 .my_message_name {
   float:right;
   display:none;
+   color:#666;
+
 }
 .message_timestamp {
   float:left;
@@ -168,7 +172,7 @@ opacity:0;
   top:40px;
   left:80px;
   padding-top:15px;
-  margin-bottom:70px;  color:#fff;
+  margin-bottom:70px;  color:#666;
 }
 
 .my_message_timestamp {
@@ -177,7 +181,7 @@ opacity:0;
   right:20px;
   padding-top:15px;
   margin-bottom:40px;
-  color:#fff;
+  color:#666;
 
 
 }
@@ -536,9 +540,10 @@ z-index: 3;
 #chat-box{
   width:100%;
   height:12vw;
-  background-color:#F4F5F9;
+    background-color:#FFFFFF;
   position: fixed;
   bottom:0;
+  border-top:1px solid #E8E9ED;
   z-index: 3;
 }
 
@@ -811,17 +816,17 @@ top:-13vw;
 opacity:0;
 }
 .stamp {
-  background-color:#7292C1;
+  background-color:#FFF;
 }
 
 .stamp img{
-  background-color:#7292C1;
+  background-color:#FFF;
 }
 .btn-stamp {
   width:8vw;
   height:8vw;
   border-radius:5px;
-  background-color:#F4F5F9;
+  background-color:#FFFFFF;
   float:left;
   margin-left:2.5vw;
   margin-top:2vw;
@@ -842,12 +847,14 @@ opacity:0;
 .message_username {
   float:left;
   width:52px;
-
+color:#000;
 }
 
 .my_message_name {
   float:right;
   display:none;
+   color:#666;
+
 }
 .message_timestamp {
   float:left;
@@ -855,7 +862,7 @@ opacity:0;
   top:40px;
   left:80px;
   padding-top:15px;
-  margin-bottom:70px;  color:#fff;
+  margin-bottom:70px;  color:#666;
 }
 
 .my_message_timestamp {
@@ -864,8 +871,7 @@ opacity:0;
   right:20px;
   padding-top:15px;
   margin-bottom:40px;
-  color:#fff;
-
+  color:#666;
 
 }
 
@@ -1022,7 +1028,7 @@ position: absolute;
 
  input {
   width:400px;
-  background-color:#D2D2D2;
+  background-color:#E8E9ED;
   height:100px;
  }
 
@@ -1224,9 +1230,11 @@ z-index: 3;
 #chat-box{
   width:100%;
   height:12vw;
-  background-color:#F4F5F9;
+    background-color:#FFFFFF;
+
   position: fixed;
   bottom:0;
+  border-top:1px solid #E8E9ED;
   z-index: 3;
 }
 
@@ -1494,18 +1502,18 @@ top:-13vw;
 opacity:0;
 }
 .stamp {
-  background-color:#7292C1;
+  background-color:#FFF;
 }
 
 .stamp img{
-  background-color:#7292C1;
+  background-color:#FFF;
 }
 
 .btn-stamp {
   width:8vw;
   height:8vw;
   border-radius:5px;
-  background-color:#F4F5F9;
+  background-color:#FFFFFF;
   float:left;
   margin-left:2.5vw;
   margin-top:2vw;
@@ -1526,12 +1534,15 @@ opacity:0;
 .message_username {
   float:left;
   width:52px;
+color:#000;
 
 }
 
 .my_message_name {
   float:right;
   display:none;
+   color:#666;
+
 }
 .message_timestamp {
   float:left;
@@ -1539,7 +1550,7 @@ opacity:0;
   top:40px;
   left:80px;
   padding-top:15px;
-  margin-bottom:70px;  color:#fff;
+  margin-bottom:70px;  color:#666;
 }
 
 .my_message_timestamp {
@@ -1548,7 +1559,7 @@ opacity:0;
   right:20px;
   padding-top:15px;
   margin-bottom:40px;
-  color:#fff;
+    color:#666;
 
 
 }
@@ -1706,7 +1717,7 @@ position: absolute;
 
  input {
   width:400px;
-  background-color:#D2D2D2;
+  background-color:#E8E9ED;
   height:100px;
  }
 
@@ -1908,9 +1919,10 @@ z-index: 3;
 #chat-box{
   width:100%;
   height:12vw;
-  background-color:#F4F5F9;
+    background-color:#FFFFFF;
   position: fixed;
   bottom:0;
+  border-top:1px solid #E8E9ED;
   z-index: 3;
 }
 
@@ -2173,18 +2185,18 @@ top:-13vw;
 opacity:0;
 }
 .stamp {
-  background-color:#7292C1;
+  background-color:#FFF;
 }
 
 .stamp img{
-  background-color:#7292C1;
+  background-color:#FFF;
 }
 
 .btn-stamp {
   width:8vw;
   height:8vw;
   border-radius:5px;
-  background-color:#F4F5F9;
+  background-color:#FFFFFF;
   float:left;
   margin-left:2.5vw;
   margin-top:2vw;
@@ -2205,12 +2217,15 @@ opacity:0;
 .message_username {
   float:left;
   width:52px;
+color:#000;
 
 }
 
 .my_message_name {
   float:right;
   display:none;
+   color:#666;
+
 }
 .message_timestamp {
   float:left;
@@ -2218,7 +2233,7 @@ opacity:0;
   top:40px;
   left:80px;
   padding-top:15px;
-  margin-bottom:70px;  color:#fff;
+  margin-bottom:70px;  color:#666;
 }
 
 .my_message_timestamp {
@@ -2227,7 +2242,7 @@ opacity:0;
   right:20px;
   padding-top:15px;
   margin-bottom:40px;
-  color:#fff;
+  color:#666;
 
 
 }
@@ -2385,7 +2400,7 @@ position: absolute;
 
  input {
   width:400px;
-  background-color:#D2D2D2;
+  background-color:#E8E9ED;
   height:100px;
  }
 
@@ -2588,9 +2603,10 @@ width: 100vw;
 #chat-box{
   width:100%;
   height:12vw;
-  background-color:#F4F5F9;
+    background-color:#FFFFFF;
   position: fixed;
   bottom:0;
+  border-top:1px solid #E8E9ED;
   z-index: 3;
 }
 
@@ -2876,17 +2892,17 @@ top:-15vw;
 opacity:0;
 }
 .stamp {
-  background-color:#7292C1;
+  background-color:#FFF;
 }
 .stamp img{
-  background-color:#7292C1;
+  background-color:#FFF;
 }
 
 .btn-stamp {
   width:40px;
   height:40px;
   border-radius:5px;
-  background-color:#F4F5F9;
+  background-color:#FFFFFF;
   float:left;
 
   margin-left:20px;
@@ -2917,6 +2933,7 @@ font-size:14px;
 .message_username {
   float:left;
     width:52px;
+color:#000;
 
 }
 
@@ -2926,6 +2943,7 @@ font-size:14px;
 .my_message_name {
   float:right;
   display:none;
+   color:#666;
 }
 .message_timestamp {
   float:left;
@@ -2933,7 +2951,7 @@ font-size:14px;
   top:40px;
   left:80px;
   padding-top:15px;
-  margin-bottom:70px;  color:#fff;
+  margin-bottom:70px;  color:#666;
 }
 
 .my_message_timestamp {
@@ -2942,7 +2960,7 @@ font-size:14px;
   right:20px;
   padding-top:15px;
   margin-bottom:40px;
-  color:#fff;
+  color:#666;
 
 
 }
@@ -3005,7 +3023,7 @@ font-size:14px;
   background-color:#EEE;
   border-radius:10px;
   word-break:break-all;
-  x-index:2;
+  z-index:2;
 }
 
 .message_cube img {
@@ -3101,7 +3119,7 @@ position: absolute;
 
  input {
   width:400px;
-  background-color:#D2D2D2;
+  background-color:#E8E9ED;
   height:100px;
  }
 
@@ -3339,9 +3357,11 @@ z-index: 3;
 #chat-box{
   width:100%;
   height:60px;
+  background-color:#FFFFFF;
   position: fixed;
   bottom:0;
   z-index: 4;
+  border-top:1px solid #E8E9ED;
 }
 
 .userstamptab {
