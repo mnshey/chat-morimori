@@ -2506,8 +2506,8 @@ position: absolute;
   top: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
      -moz-transform: translate3d(-50%, -50%, 0);
-           -ms-transform: translate(-50%, -50%);
-          transform: translate3d(-50%, -50%, 0);
+               ms-transform: translate(-50%, -50%);
+             transform: translate3d(-50%, -50%, 0);
  }
 
 .setting li {
@@ -2523,11 +2523,11 @@ margin-left: 12vw;
   }
 
 .setting li img {
-
 width:18vw;
 padding:3.5vw;
 -webkit-transform:rotate(180deg);
   }
+
 .setting {
   border-top:1px solid #F4F5F9;
   width:100%;
@@ -2535,7 +2535,7 @@ padding:3.5vw;
   display: none;
   background-color: #263147;
   position: fixed;
-  top:15vw;
+  top:7vw;
   z-index: 3;
 }
 .select {
