@@ -1,27 +1,27 @@
-<div id="newaccountmain">
 
- <% require 'securerandom' %>
- <% @ranmail = "#{SecureRandom.hex(8)}@gmail.com" %>
+
+<div id="newaccountmain">
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 <div class="final-form">
-<h1>デジクリ<br />スタンプ</h1>
+<h1>アカウント登録</h1>
   <div class="field">
-    ニックネーム
-    <%= f.text_field :username, autofocus: true, :placeholder => "5文字以上" %>
+     <label>ニックネーム (5文字以上)</label>
+
+    <%= f.text_field :username, autofocus: true %>
   </div>
 
 
   <div class="field">
-    学籍番号
+      <label>学籍番号</label>
     <%= f.text_field :mynumber, autofocus: true %>
   </div>
 
 
   <div class="field" style="display: none;">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, value:@ranmail%>
+    <%= f.email_field :email, autofocus: true %>
   </div>
 
   <div class="field" style="display: none;">
@@ -29,17 +29,30 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off", value:@ranmail %>
+    <%= f.password_field :password, autocomplete: "off", value:"123123123" %>
   </div>
 
   <div class="field" style="display: none;">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off", value:@ranmail %>
+    <%= f.password_field :password_confirmation, autocomplete: "off", value:"123123123" %>
   </div>
 
   <div class="actions">
     <%= f.submit "登録" %>
 </div>
-  </div>
 <% end %>
+
+<%= render "devise/shared/links" %>
+
+
+  </div>
 </div>
+
+
+<script>
+$("input").on("keyup", function() {
+  var id = $("input[id='user_mynumber']").val();
+console.log(id + "@gmail.com");
+document.getElementById('user_email').value = id + "@gmail.com";
+});
+</script>

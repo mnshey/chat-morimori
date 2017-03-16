@@ -15,6 +15,44 @@
  */
 
 
+.my_message_content .stamp_big {
+position: relative;
+right: -25px;
+bottom:0;
+height:50vw;
+width:50vw;
+display: block;
+}
+.message_content .stamp_big {
+position: relative;
+left:50%;
+height:50vw;
+width:50vw;
+}
+
+
+.stamp_big img {
+
+  width: auto;
+  height:100%;
+display: block;
+position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+     -moz-transform: translate3d(-50%, -50%, 0);
+           -ms-transform: translate(-50%, -50%);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.my_message_cube .balloon {
+  display: none;
+}
+.message_cube .balloon2 {
+  display: none;
+}
 
 @media only screen and (min-device-width:320px) and (max-device-width:568px) {
 
@@ -104,7 +142,29 @@ a {
   border:none;
   background-color:#55CB6D;
   color:#FFF;
+  font-size:17px;
 }
+
+.login_signup_button {
+
+  margin-top:10vw;
+  margin-left:20vw;
+  height:9vw;
+  width:30vw;
+  border:1px solid #FFF;
+
+  color:#FFF;
+  font-size:17px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 2.8em;
+}
+
+.login_signup_button a  {
+ width: 100%;
+ display: block;
+}
+
 .actions_edit {
   margin-top:10vw;
   height:13vw;
@@ -156,7 +216,9 @@ opacity:0;
 }
 .message_username {
   float:left;
-  width:52px;
+
+    width:200px;
+    height:20px;
 color:#000;
 }
 
@@ -228,8 +290,12 @@ color:#000;
   font-size:3vw;
 }
 .my_message_content img {
+
   width:200px;
+    position: relative;
+  right:-25px;
   height:auto;
+  z-index:2;
 }
 
 .message_cube {
@@ -238,7 +304,7 @@ color:#000;
   float:left;
   position:relative;
   top:40px;
-  left:-40px;
+  left:-180px;
   background-color:#EEE;
   border-radius:10px;
   word-break:break-all;
@@ -256,7 +322,7 @@ color:#000;
   float:right;
   background-color:#B2EC8B;
   border-radius:10px;
-  margin-right:20px;
+  margin-right:50px;
   word-break:break-all;
 }
 .my_message_cube img {
@@ -693,6 +759,38 @@ left:-40px;
   height:180px;
 }
 
+
+.message_cube .balloon {
+  position: relative;
+  width:30px;
+  left:-20px;
+  top:-20px;
+}
+.message_cube .balloon img {
+  width:100%;
+  -webkit-transform:rotate(180deg);
+     -moz-transform:rotate(180deg);
+           -ms-transform:rotate(180deg);
+          transform:rotate(180deg);
+  position: absolute;
+  top:25px;
+}
+
+
+
+.my_message_cube .balloon2 {
+  position: relative;
+  width:30px;
+  top:-20px;
+  left:-10px;
+}
+.my_message_cube .balloon2 img {
+  width:100%;
+  position: absolute;
+  top:25px;
+}
+
+
   }
 
 
@@ -794,7 +892,29 @@ a {
   border:none;
   background-color:#55CB6D;
   color:#FFF;
+  font-size:20px;
 }
+
+.login_signup_button {
+
+  margin-top:10vw;
+  margin-left:20vw;
+  height:9vw;
+  width:30vw;
+  border:1px solid #FFF;
+
+  color:#FFF;
+  font-size:17px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 3em;
+}
+
+.login_signup_button a  {
+ width: 100%;
+ display: block;
+}
+
 .actions_edit {
   margin-top:10vw;
   height:13vw;
@@ -846,7 +966,8 @@ opacity:0;
 }
 .message_username {
   float:left;
-  width:52px;
+    width:200px;
+    height:20px;
 color:#000;
 }
 
@@ -917,9 +1038,12 @@ color:#000;
   font-size:3vw;
 }
 .my_message_content img {
-  width:200px;
 
+  width:200px;
+    position: relative;
+  right:-25px;
   height:auto;
+  z-index:2;
 }
 
 .message_cube {
@@ -928,7 +1052,7 @@ color:#000;
   float:left;
   position:relative;
   top:40px;
-  left:-40px;
+  left:-180px;
   background-color:#EEE;
   border-radius:10px;
   word-break:break-all;
@@ -946,7 +1070,7 @@ color:#000;
   float:right;
   background-color:#B2EC8B;
   border-radius:10px;
-  margin-right:20px;
+  margin-right:50px;
   word-break:break-all;
 }
 .my_message_cube img {
@@ -1378,6 +1502,37 @@ left:-15px;
   height:180px;
 }
 
+
+.message_cube .balloon {
+  position: relative;
+  width:30px;
+  left:-20px;
+  top:-20px;
+}
+.message_cube .balloon img {
+  width:100%;
+  -webkit-transform:rotate(180deg);
+     -moz-transform:rotate(180deg);
+           -ms-transform:rotate(180deg);
+          transform:rotate(180deg);
+  position: absolute;
+  top:25px;
+}
+
+
+
+.my_message_cube .balloon2 {
+  position: relative;
+  width:30px;
+  top:-20px;
+  left:-5px;
+}
+.my_message_cube .balloon2 img {
+  width:100%;
+  position: absolute;
+  top:25px;
+}
+
   }
 
 
@@ -1480,7 +1635,28 @@ a {
   border:none;
   background-color:#55CB6D;
   color:#FFF;
+  font-size:30px;
 }
+
+.login_signup_button {
+
+  margin-top:10vw;
+  margin-left:20vw;
+  height:9vw;
+  width:30vw;
+  border:1px solid #FFF;
+  color:#FFF;
+  font-size:28px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 2em;
+}
+
+.login_signup_button a  {
+ width: 100%;
+ display: block;
+}
+
 .actions_edit {
   margin-top:10vw;
   height:13vw;
@@ -1533,7 +1709,8 @@ opacity:0;
 }
 .message_username {
   float:left;
-  width:52px;
+    width:200px;
+    height:20px;
 color:#000;
 
 }
@@ -1606,9 +1783,12 @@ color:#000;
   font-size:3vw;
 }
 .my_message_content img {
-  width:200px;
 
+  width:200px;
+    position: relative;
+  right:-25px;
   height:auto;
+  z-index:2;
 }
 
 .message_cube {
@@ -1617,7 +1797,7 @@ color:#000;
   float:left;
   position:relative;
   top:40px;
-  left:-40px;
+  left:-180px;
   background-color:#EEE;
   border-radius:10px;
   word-break:break-all;
@@ -1635,7 +1815,7 @@ color:#000;
   float:right;
   background-color:#B2EC8B;
   border-radius:10px;
-  margin-right:20px;
+  margin-right:50px;
   word-break:break-all;
 }
 .my_message_cube img {
@@ -2059,6 +2239,36 @@ left:0px;
   height:180px;
 }
 
+
+.message_cube .balloon {
+  position: relative;
+  width:30px;
+  left:-20px;
+  top:-20px;
+}
+.message_cube .balloon img {
+  width:100%;
+  -webkit-transform:rotate(180deg);
+     -moz-transform:rotate(180deg);
+           -ms-transform:rotate(180deg);
+          transform:rotate(180deg);
+  position: absolute;
+  top:25px;
+}
+
+
+.my_message_cube .balloon2 {
+  position: relative;
+  width:30px;
+  top:-20px;
+  left:-5px;
+}
+.my_message_cube .balloon2 img {
+  width:100%;
+  position: absolute;
+  top:25px;
+}
+
   }
 
 
@@ -2113,6 +2323,11 @@ a {
   height:100vh;
 }
 
+
+.final-form .field label {  
+  font-size:35px;
+}
+
 .final-form {
   padding-top:30vw;
 }
@@ -2163,7 +2378,30 @@ a {
   border:none;
   background-color:#55CB6D;
   color:#FFF;
+
+  font-size:40px;
 }
+
+.login_signup_button {
+
+  margin-top:10vw;
+  margin-left:20vw;
+  height:9vw;
+  width:30vw;
+  border:1px solid #FFF;
+
+  color:#FFF;
+  font-size:40px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 2.6em;
+}
+
+.login_signup_button a  {
+ width: 100%;
+ display: block;
+}
+
 .actions_edit {
   margin-top:10vw;
   height:13vw;
@@ -2216,7 +2454,9 @@ opacity:0;
 }
 .message_username {
   float:left;
-  width:52px;
+
+    width:200px;
+    height:20px;
 color:#000;
 
 }
@@ -2290,8 +2530,10 @@ color:#000;
 }
 .my_message_content img {
   width:200px;
-
+    position: relative;
+  right:-25px;
   height:auto;
+  z-index:2;
 }
 
 .message_cube {
@@ -2300,11 +2542,11 @@ color:#000;
   float:left;
   position:relative;
   top:40px;
-  left:-40px;
+  left:-180px;
   background-color:#EEE;
   border-radius:10px;
   word-break:break-all;
-  x-index:2;
+  z-index:2;
 }
 
 .message_cube img {
@@ -2318,7 +2560,7 @@ color:#000;
   float:right;
   background-color:#B2EC8B;
   border-radius:10px;
-  margin-right:20px;
+  margin-right:60px;
   word-break:break-all;
 }
 .my_message_cube img {
@@ -2739,6 +2981,7 @@ padding-top:40px;
 
   font-size:2.1vw;
 }
+
 #preview1 {
 position: relative;
 top:150px; 
@@ -2768,11 +3011,43 @@ position: absolute;
   }
 
 
+.message_cube .balloon {
+  position: relative;
+  width:30px;
+  left:-20px;
+  top:-20px;
+}
+.message_cube .balloon img {
+  width:100%;
+  -webkit-transform:rotate(180deg);
+     -moz-transform:rotate(180deg);
+           -ms-transform:rotate(180deg);
+          transform:rotate(180deg);
+  position: absolute;
+  top:25px;
+}
+
+
+.my_message_cube .balloon2 {
+  position: relative;
+  width:30px;
+  top:-20px;
+  left:-5px;
+}
+.my_message_cube .balloon2 img {
+  width:100%;
+  position: absolute;
+  top:25px;
+}
+
+
   }
 
 
 
  @media only screen and (min-device-width: 1024px) and (max-device-width:  9990px) {
+
+
 
 
 a {
@@ -2808,6 +3083,11 @@ a {
 #newaccountmain {
   background-color:#00C039;
   height:100%;
+}
+
+
+.final-form .field label {  
+  font-size:35px;
 }
 
 .final-form {
@@ -2860,7 +3140,28 @@ width:400px;
   border:none;
   background-color:#55CB6D;
   color:#FFF;
+  font-size:40px;
 }
+
+.login_signup_button {
+
+  margin-top:10vw;
+  margin-left:20vw;
+  height:9vw;
+  width:30vw;
+  border:1px solid #FFF;
+  color:#FFF;
+  font-size:40px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 2em;
+}
+
+.login_signup_button a  {
+ width: 100%;
+ display: block;
+}
+
 .actions_edit {
 
   float: left;
@@ -2932,7 +3233,8 @@ font-size:14px;
 }
 .message_username {
   float:left;
-    width:52px;
+    width:200px;
+    height:20px;
 color:#000;
 
 }
@@ -2967,7 +3269,6 @@ color:#000;
 
 .message_content {
   text-decoration:none;
-  
   float:right;
   pointer-events : none;
 }
@@ -3008,9 +3309,12 @@ color:#000;
   font-size:15px;
 }
 .my_message_content img {
-  width:200px;
 
+  width:200px;
+    position: relative;
+  right:-25px;
   height:auto;
+  z-index:2;
 }
 
 .message_cube {
@@ -3019,7 +3323,7 @@ color:#000;
   float:left;
   position:relative;
   top:40px;
-  left:-40px;
+  left:-180px;
   background-color:#EEE;
   border-radius:10px;
   word-break:break-all;
@@ -3037,7 +3341,7 @@ color:#000;
   float:right;
   background-color:#B2EC8B;
   border-radius:10px;
-  margin-right:20px;
+  margin-right:50px;
   word-break:break-all;
 }
 .my_message_cube img {
@@ -3467,12 +3771,15 @@ position: absolute;
 }
 
 
-}
-.balloon {
+
+.message_cube .balloon {
   position: relative;
+  width:30px;
+  left:-20px;
+  top:-20px;
 }
-.balloon img {
-  width:30%;
+.message_cube .balloon img {
+  width:100%;
   -webkit-transform:rotate(180deg);
      -moz-transform:rotate(180deg);
            -ms-transform:rotate(180deg);
@@ -3480,4 +3787,21 @@ position: absolute;
   position: absolute;
   top:25px;
 }
+
+
+.my_message_cube .balloon2 {
+  position: relative;
+  width:30px;
+  top:-24px;
+  left:-10px;
+}
+.my_message_cube .balloon2 img {
+  width:100%;
+  position: absolute;
+  top:25px;
+}
+
+
+}
+
 
