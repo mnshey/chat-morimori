@@ -6,7 +6,7 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
 
 Rails.application.config.action_cable.disable_request_forgery_protection = true
-
+config.action_cable.disable_request_forgery_protection = true
   config.cache_classes = false
 
   # Do not eager load code on boot.
