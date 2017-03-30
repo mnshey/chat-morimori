@@ -38,7 +38,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "登録" %>
+    <%= f.submit "登録", type: "button", id: "btn_submit" %>
 </div>
 <% end %>
 
@@ -55,4 +55,14 @@ $("input").on("keyup", function() {
 console.log(id + "@gmail.com");
 document.getElementById('user_email').value = id + "@gmail.com";
 });
+
+$(function(){
+  $('#btn_submit').click(function(){
+    var id = $("input[id='user_mynumber']").val();
+    console.log(id + "@gmail.com");
+    document.getElementById('user_email').value = id + "@gmail.com";
+
+    $('#new_user').submit();
+  });
+})
 </script>

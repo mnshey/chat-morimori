@@ -22,7 +22,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in" , type:"button", id:"btn_submit" %>
   </div>
 
 
@@ -40,4 +40,16 @@ $("input").on("keyup", function() {
 console.log(id + "@gmail.com");
 document.getElementById('user_email').value = id + "@gmail.com";
 });
+
+
+$(function(){
+  $('#btn_submit').click(function(){
+  var id = $("input[id='area51']").val();
+console.log(id + "@gmail.com");
+document.getElementById('user_email').value = id + "@gmail.com";
+
+    $('#new_user').submit();
+  });
+})
+
 </script>
