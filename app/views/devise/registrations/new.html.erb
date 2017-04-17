@@ -50,13 +50,15 @@
 
 
 <script>
-$("input").on("keyup", function() {
-  var id = $("input[id='user_mynumber']").val();
-console.log(id + "@gmail.com");
-document.getElementById('user_email').value = id + "@gmail.com";
+  $(document).ready(function(){
+    $("input").on("keyup", function() {
+      var id = $("input[id='user_mynumber']").val();
+    console.log(id + "@gmail.com");
+    document.getElementById('user_email').value = id + "@gmail.com";
+    });
 });
 
-$(function(){
+  $(document).ready(function(){
   $('#btn_submit').click(function(){
     var id = $("input[id='user_mynumber']").val();
     console.log(id + "@gmail.com");
@@ -64,5 +66,5 @@ $(function(){
 
     $('#new_user').submit();
   });
-})
+});
 </script>

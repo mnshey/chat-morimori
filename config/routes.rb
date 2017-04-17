@@ -10,8 +10,9 @@ devise_scope :user do
   get 'logout' => 'users/sessions#destroy', as: :destroy_user_session
   
 end
+
 get 'chat' => 'rooms#show'
-  root to: 'homes#index'
+  root to: 'rooms#show'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 

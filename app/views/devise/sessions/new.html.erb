@@ -35,14 +35,16 @@
 
 
 <script>
+  $(document).ready(function(){
+
 $("input").on("keyup", function() {
   var id = $("input[id='area51']").val();
 console.log(id + "@gmail.com");
 document.getElementById('user_email').value = id + "@gmail.com";
 });
+});
 
-
-$(function(){
+  $(document).ready(function(){
   $('#btn_submit').click(function(){
   var id = $("input[id='area51']").val();
 console.log(id + "@gmail.com");
@@ -50,6 +52,6 @@ document.getElementById('user_email').value = id + "@gmail.com";
 
     $('#new_user').submit();
   });
-})
+});
 
 </script>
