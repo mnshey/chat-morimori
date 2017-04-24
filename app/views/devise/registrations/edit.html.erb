@@ -20,7 +20,13 @@
 <div id="preview1" class="editImage_avatar"><img id="uploadFile_preview_0"></div>
 
     <div class="field_edit_avatar">
-<div id="selectButton_z2_0" class="stampSelectbutton_z2_0">プロフィール画像</div><%= f.file_field :image , :class=>"stampSelectbutton_0"%>
+      <div id="selectButton_z2_0" class="stampSelectbutton_z2_0">プロフィール画像</div>
+      <%= f.file_field :image , :class=>"stampSelectbutton_0"%>
+    </div>
+
+    <div class="profile-setting-field">
+      <span>ニックネームの変更</span><br />
+      <%= f.text_field :username, :class => "edit-field-username", autofocus: true %>
     </div>
 
 <div class="field_edit">

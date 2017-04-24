@@ -4,17 +4,18 @@
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
+  <div class="font-title"><h1>アカウント登録</h1></div>
 <div class="final-form">
-<h1>アカウント登録</h1>
+
   <div class="field">
-     <label>ニックネーム (5文字以上)</label>
+     <label>ニックネーム</label>
 
     <%= f.text_field :username, autofocus: true %>
   </div>
 
 
   <div class="field">
-      <label>学籍番号</label>
+      <label>学籍番号・入試番号</label>
     <%= f.text_field :mynumber, autofocus: true %>
   </div>
 
@@ -38,7 +39,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "登録", type: "button", id: "btn_submit" %>
+    <%= f.submit "アカウント登録", type: "button", id: "btn_submit" %>
 </div>
 <% end %>
 

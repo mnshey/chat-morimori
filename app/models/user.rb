@@ -1,22 +1,20 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
 
-    validates :mynumber,
-    uniqueness: true,
-    presence: true
-    
-    validates :username,
-    length: { in: 5..30 },
-    uniqueness: true,
-    presence: true
-    
+  validates :mynumber,
+  uniqueness: true,
+  presence: true
+
+  validates :username,
+  length: { in: 1..30 },
+  uniqueness: true,
+  presence: true
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable
 
   mount_uploader :image, ImageUploader
   mount_uploader :stamp_1, Stamp1Uploader

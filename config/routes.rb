@@ -8,7 +8,6 @@ devise_scope :user do
   get 'login' => 'users/sessions#new', as: :new_user_session
   post 'login' => 'users/sessions#create', as: :user_session
   get 'logout' => 'users/sessions#destroy', as: :destroy_user_session
-  
 end
 
 get 'chat' => 'rooms#show'

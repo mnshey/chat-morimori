@@ -17,8 +17,7 @@
 .main_half_view {
   width:100%;
   height:50vh;
-    background-color: #EAEAE9;
-
+  background-color: #EAEAE9;
   text-align: center;
 }
 
@@ -59,18 +58,19 @@
 }
 
 .my_message_content .stamp_big {
-position: relative;
-right: -25px;
-bottom:0;
-height:50vw;
-width:50vw;
-display: block;
+  position: relative;
+  right: -25px;
+  bottom:0;
+  height:50vw;
+  width:50vw;
+  display: block;
 }
+
 .message_content .stamp_big {
-position: relative;
-left:50%;
-height:50vw;
-width:50vw;
+  position: relative;
+  left:50%;
+  height:50vw;
+  width:50vw;
 }
 
 
@@ -78,8 +78,8 @@ width:50vw;
 
   width: auto;
   height:100%;
-display: block;
-position: absolute;
+  display: block;
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   left: 50%;
@@ -131,33 +131,41 @@ a {
   }
 
 #newaccountmain {
-  background-color:#00C039;
+  background-color:#273147;
   height:100vh;
 }
 
 .final-form {
-  padding-top:30vw;
+  padding-top:10vw;
+  background-color: #eee;
+  width:80vw;
+  margin:0 auto;
+  height:325px;
+  border:3px solid #EEE;
+  border-radius: 15px;
 }
 
-.final-form h1 {
-  padding-bottom:30vw;
+.font-title h1 {
+  padding-top:10vw;
+  padding-bottom:10vw;
+
   text-align:center;
   color:#FFF;
-  font-size:14vw;
+  font-size:9vw;
+  font-weight: 100;
   font-family:Meiryo, sans-serif;
+  margin:0 auto;
 }
 .field {
-  
   width:60vw;
   height:8vw;
-  margin-left:20vw;
+  margin-left:10vw;
   margin-bottom:8vw;
   color:#FFF;
 }
 
 .field_edit {
-  
-  
+
   margin-bottom:8vw;
   color:#000;
   font-size:3vw;
@@ -170,20 +178,27 @@ a {
 .input-box_text {
   font-size:5vw;
 }
+.field label {
+color:#333;
+}
+
 .field input {
   width:60vw;
   height:8vw;
   border:none;
   font-size:5vw;
   border-radius:5px;
+  background-color: #FFF;
+  border:1px solid #333;
 }
 .actions input{
-  margin-top:10vw;
-  margin-left:20vw;
+  margin-top:3vw;
+  margin-left:10vw;
   height:9vw;
   width:60vw;
   border:none;
-  background-color:#55CB6D;
+  background-color:#214c6f;
+  border-radius: 10px;
   color:#FFF;
   font-size:17px;
 }
@@ -191,20 +206,25 @@ a {
 .login_signup_button {
 
   margin-top:10vw;
-  margin-left:20vw;
-  height:9vw;
-  width:30vw;
-  border:1px solid #FFF;
+  margin-left:23vw;
+  margin-bottom: 10vw;
+  height:35px;
+  width:33vw;
 
-  color:#FFF;
-  font-size:17px;
+  border:1px solid #989898;
+  color: #989898;
+  font-size:20px;
   margin-top: 20px;
   text-align: center;
-  line-height: 2.8em;
+  line-height: 1.9em;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .login_signup_button a  {
  width: 100%;
+
+ color: #989898;
  display: block;
 }
 
@@ -213,7 +233,7 @@ a {
   height:13vw;
   width:60vw;
   border:none;
-  background-color:#55CB6D;
+  background-color:#214c6f;
   color:#FFF;
   font-size:5vw;
   border-radius:10px;
@@ -224,9 +244,9 @@ a {
 .actions_edit input{
   height:13vw;
   width:60vw;
-position:relative;
-top:-13vw;
-opacity:0;
+  position:relative;
+  top:-13vw;
+  opacity:0;
 }
 .stamp {
   background-color:#FFF;
@@ -761,6 +781,7 @@ position: absolute;
      -moz-transform: translate3d(-50%, -50%, 0);
            -ms-transform: translate(-50%, -50%);
           transform: translate3d(-50%, -50%, 0);
+          opacity: 0.5;
 }
 
 .unit:first-child {
@@ -841,6 +862,30 @@ left:-40px;
 }
 
 
+.profile-setting-field  {
+  position:relative;
+left:-88px;
+top:20px;
+margin-bottom: 45px;
+}
+
+.profile-setting-field span {
+font-size:25px;
+}
+
+.profile-setting-field input {
+
+  width:360px;
+  height:80px;
+  font-size:25px;
+  background-color:#FFF;
+  border:1px solid #333;
+  border-radius:8px;
+margin-top: 15px;
+  padding-left: 40px;
+}
+
+
   }
 
 
@@ -888,37 +933,43 @@ a {
   }
 
 #newaccountmain {
-  background-color:#00C039;
+  background-color:#273147;
   height:100vh;
 }
 
+
 .final-form {
-  padding-top:30vw;
+  padding-top:10vw;
+  background-color: #ededed;
+  width:80vw;
+  margin:0 auto;
+  border-radius:15px;
+  height:360px;
 }
 
-.final-form h1 {
-  padding-bottom:30vw;
+.font-title h1 {
+  padding-top:15vw;
+  padding-bottom:10vw;
   text-align:center;
   color:#FFF;
-  font-size:14vw;
+  font-size:8vw;
+  font-weight:100;
   font-family:Meiryo, sans-serif;
 }
 .field {
   
   width:60vw;
   height:8vw;
-  margin-left:20vw;
+  margin-left:10vw;
   margin-bottom:8vw;
   color:#FFF;
 }
 
 .field_edit {
-  
-  
+
   margin-bottom:8vw;
   color:#000;
   font-size:3vw;
-
   height:200px;
   position: relative;
   left:-90px;
@@ -927,41 +978,52 @@ a {
 .input-box_text {
   font-size:5vw;
 }
+.field label {
+color:#333;
+}
+
 .field input {
   width:60vw;
   height:8vw;
   border:none;
   font-size:5vw;
   border-radius:5px;
+  background-color: #FFF;
+  border: 1px solid #333;
 }
 .actions input{
-  margin-top:10vw;
-  margin-left:20vw;
+  margin-top:3vw;
+  margin-left:10vw;
   height:9vw;
   width:60vw;
   border:none;
-  background-color:#55CB6D;
+  background-color:#214c6f;
   color:#FFF;
   font-size:20px;
+  border-radius: 15px;
 }
 
 .login_signup_button {
 
-  margin-top:10vw;
-  margin-left:20vw;
-  height:9vw;
-  width:30vw;
-  border:1px solid #FFF;
 
-  color:#FFF;
-  font-size:17px;
+  margin-top:10vw;
+  margin-left:25vw;
+  margin-bottom: 10vw;
+  height:40px;
+  width:30vw;
+  border:1px solid #989898;
+  color: #989898;
+  font-size:25px;
   margin-top: 20px;
   text-align: center;
-  line-height: 3em;
+  line-height: 1.7em;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .login_signup_button a  {
  width: 100%;
+ color: #989898;
  display: block;
 }
 
@@ -970,7 +1032,7 @@ a {
   height:13vw;
   width:60vw;
   border:none;
-  background-color:#55CB6D;
+  background-color:#214c6f;
   color:#FFF;
   font-size:5vw;
   border-radius:10px;
@@ -1519,6 +1581,7 @@ position: absolute;
      -moz-transform: translate3d(-50%, -50%, 0);
            -ms-transform: translate(-50%, -50%);
           transform: translate3d(-50%, -50%, 0);
+          opacity: 0.5;
 }
 
 .unit:first-child {
@@ -1593,6 +1656,31 @@ left:-15px;
   top:25px;
 }
 
+
+.profile-setting-field  {
+  position:relative;
+left:-88px;
+top:20px;
+margin-bottom: 45px;
+}
+
+.profile-setting-field span {
+font-size:25px;
+}
+
+.profile-setting-field input {
+
+  width:360px;
+  height:80px;
+  font-size:25px;
+  background-color:#FFF;
+  border:1px solid #333;
+  border-radius:8px;
+margin-top: 15px;
+  padding-left: 40px;
+}
+
+
   }
 
 
@@ -1641,33 +1729,40 @@ a {
   }
 
 #newaccountmain {
-  background-color:#00C039;
+  background-color:#273147;
   height:100vh;
 }
 
 .final-form {
-  padding-top:30vw;
+  padding-top:10vw;
+  background-color: #ededed;
+  width:80vw;
+  height:405px;
+  margin:0 auto;
+  border-radius: 15px;
+  border: 3px solid #9e9e9e;
 }
 
-.final-form h1 {
-  padding-bottom:30vw;
+.font-title h1 {
+  padding-top:10vw;
+  padding-bottom:10vw;
   text-align:center;
   color:#FFF;
-  font-size:14vw;
+  font-weight:100;
+  font-size:7vw;
   font-family:Meiryo, sans-serif;
 }
 .field {
   
   width:60vw;
   height:8vw;
-  margin-left:20vw;
+  margin-left:10vw;
   margin-bottom:8vw;
   color:#FFF;
 }
 
 .field_edit {
-  
-  
+
   margin-bottom:8vw;
   color:#000;
   font-size:3vw;
@@ -1680,40 +1775,53 @@ a {
 .input-box_text {
   font-size:5vw;
 }
+
+.field label {
+ color:#333;
+}
+
 .field input {
   width:60vw;
   height:8vw;
   border:none;
   font-size:5vw;
   border-radius:5px;
+  background-color: #FFF;
+  border: 1px solid #333;
 }
 .actions input{
-  margin-top:10vw;
-  margin-left:20vw;
+  margin-top:3vw;
+  margin-left:10vw;
   height:9vw;
   width:60vw;
   border:none;
-  background-color:#55CB6D;
+  background-color:#214c6f;
+  border-radius: 15px;
   color:#FFF;
   font-size:30px;
 }
 
 .login_signup_button {
-
   margin-top:10vw;
-  margin-left:20vw;
-  height:9vw;
+  margin-left:25vw;
+  margin-bottom: 10vw;
+  height:45px;
   width:30vw;
-  border:1px solid #FFF;
-  color:#FFF;
-  font-size:28px;
+
+  border:1px solid #989898;
+  color: #989898;
+  font-size:27px;
   margin-top: 20px;
   text-align: center;
-  line-height: 2em;
+  line-height: 1.9em;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .login_signup_button a  {
  width: 100%;
+
+ color: #989898;
  display: block;
 }
 
@@ -1722,7 +1830,7 @@ a {
   height:13vw;
   width:60vw;
   border:none;
-  background-color:#55CB6D;
+  background-color:#214c6f;
   color:#FFF;
   font-size:5vw;
   border-radius:10px;
@@ -2274,6 +2382,7 @@ position: absolute;
      -moz-transform: translate3d(-50%, -50%, 0);
            -ms-transform: translate(-50%, -50%);
           transform: translate3d(-50%, -50%, 0);
+          opacity: 0.5;
 }
 
 .unit:first-child {
@@ -2341,6 +2450,31 @@ left:0px;
   top:25px;
 }
 
+
+.profile-setting-field  {
+  position:relative;
+left:-88px;
+top:20px;
+margin-bottom: 45px;
+}
+
+.profile-setting-field span {
+font-size:25px;
+}
+
+.profile-setting-field input {
+
+  width:360px;
+  height:80px;
+  font-size:25px;
+  background-color:#FFF;
+  border:1px solid #333;
+  border-radius:8px;
+margin-top: 15px;
+  padding-left: 40px;
+}
+
+
   }
 
 
@@ -2391,42 +2525,48 @@ a {
   }
 
 #newaccountmain {
-  background-color:#00C039;
+
+  background-color:#273147;
   height:100vh;
 }
 
 
 .final-form .field label {  
   font-size:35px;
+  color:#333;
 }
 
 .final-form {
-  padding-top:30vw;
+  width:80vw;
+  padding-top:7vw;
+  padding-bottom: 5vw;
+  background-color: #ededed;
+  margin: 0 auto;
+  border-radius:15px;
 }
 
-.final-form h1 {
-  padding-bottom:30vw;
+.font-title h1 {
+  padding-top:15vw;
+  padding-bottom:15vw;
   text-align:center;
   color:#FFF;
   font-size:7vw;
+  font-weight:100;
   font-family:Meiryo, sans-serif;
 }
 .field {
   
   width:60vw;
   height:8vw;
-  margin-left:20vw;
+  margin-left:10vw;
   margin-bottom:8vw;
   color:#FFF;
 }
 
 .field_edit {
-  
-  
   margin-bottom:8vw;
   color:#000;
   font-size:3vw;
-
   height:200px;
   position: relative;
   left:-90px;
@@ -2441,14 +2581,20 @@ a {
   border:none;
   font-size:5vw;
   border-radius:5px;
+  background-color: #ffffff;
+  border: 1px solid #333;
+  border-radius: 15px;
 }
 .actions input{
-  margin-top:10vw;
-  margin-left:20vw;
+  margin-top:3vw;
+  margin-left:10vw;
   height:9vw;
   width:60vw;
-  border:none;
-  background-color:#55CB6D;
+  border-radius: 15px;
+  background-color:#214c6f;
+  border:1px solid #263147;
+
+  
   color:#FFF;
 
   font-size:40px;
@@ -2457,21 +2603,26 @@ a {
 .login_signup_button {
 
   margin-top:10vw;
-  margin-left:20vw;
-  height:9vw;
+  margin-left:24vw;
+  height:60px;
   width:30vw;
-  border:1px solid #FFF;
 
-  color:#FFF;
+  border:1px solid #989898;
+  color: #989898;
   font-size:40px;
   margin-top: 20px;
   text-align: center;
-  line-height: 2.6em;
+  line-height: 1.7em;
+  background-color: #ffffff;
+  border-radius: 10px;
+
 }
 
 .login_signup_button a  {
  width: 100%;
- display: block;
+ display: block; 
+ color:#989898;
+
 }
 
 .actions_edit {
@@ -2479,7 +2630,7 @@ a {
   height:13vw;
   width:60vw;
   border:none;
-  background-color:#55CB6D;
+  background-color:#214c6f;
   color:#FFF;
   font-size:5vw;
   border-radius:10px;
@@ -3026,6 +3177,7 @@ position: absolute;
      -moz-transform: translate3d(-50%, -50%, 0);
            -ms-transform: translate(-50%, -50%);
           transform: translate3d(-50%, -50%, 0);
+          opacity: 0.5;
 }
 
 .unit:first-child {
@@ -3064,8 +3216,7 @@ padding-top:40px;
 
 #preview1 {
 position: relative;
-top:150px; 
-
+top:70px; 
     -moz-transform: scale(1.8,1.8);
 -webkit-transform: scale(1.8,1.8);
 left:-85px;
@@ -3117,6 +3268,30 @@ position: absolute;
 }
 
 
+.profile-setting-field  {
+  position:relative;
+left:-88px;
+top:20px;
+margin-bottom: 45px;
+}
+
+.profile-setting-field span {
+font-size:25px;
+}
+
+.profile-setting-field input {
+
+  width:360px;
+  height:80px;
+  font-size:25px;
+  background-color:#FFF;
+  border:1px solid #333;
+  border-radius:8px;
+margin-top: 15px;
+  padding-left: 40px;
+}
+
+
   }
 
 
@@ -3143,7 +3318,7 @@ a {
 }
 .setting-button {
   position:relative;
-  top:10px;
+  top:4px;
 }
 .setting-button img{
   width:100px;
@@ -3157,30 +3332,34 @@ a {
   }
 
 #newaccountmain {
-  background-color:#00C039;
+  background-color:#273147;
   height:100%;
 }
 
 
-.final-form .field label {  
+.final-form .field label {
   font-size:35px;
 }
 
 .final-form {
-margin-top:-20vw;
-
-    -moz-transform: scale(0.4,0.4);
--webkit-transform: scale(0.4,0.4);
--o-transform: scale(0.4,0.4);
--ms-transform: scale(0.4,0.4);
+  margin-top:-20vw;
+  -moz-transform: scale(0.4,0.4);
+  -webkit-transform: scale(0.4,0.4);
+  -o-transform: scale(0.4,0.4);
+  -ms-transform: scale(0.4,0.4);
+  background-color: #ededed;
+  border: 8px solid #9e9e9e;
+  border-radius: 18px;
 }
 
-.final-form h1 {
-  padding-bottom:30vw;
+.font-title h1 {
+  padding-top:10vw;
+  padding-bottom:10vw;
   text-align:center;
   color:#FFF;
-  font-size:14vw;
+  font-size:3vw;
   font-family:Meiryo, sans-serif;
+  font-weight: 100;
 }
 .field {
   
@@ -3188,6 +3367,7 @@ margin-top:-20vw;
   height:8vw;
   margin-left:20vw;
   margin-bottom:8vw;
+  margin-top: 8vw;
   color:#FFF;
 }
 
@@ -3201,20 +3381,28 @@ width:400px;
 
 }
 
+.field label {
+color:#333;
+
+}
+
 .field input {
   width:60vw;
   height:8vw;
   border:none;
   font-size:5vw;
-  border-radius:5px;
+  background-color: #FFF;
+  border-radius: 15px;
+  border:3px solid #989898;
 }
-.actions input{
+.actions input {
   margin-top:10vw;
   margin-left:20vw;
   height:9vw;
   width:60vw;
-  border:none;
-  background-color:#55CB6D;
+  background-color:#214c6f;
+  border:1px solid #263147;
+  border-radius: 15px;
   color:#FFF;
   font-size:40px;
 }
@@ -3222,19 +3410,25 @@ width:400px;
 .login_signup_button {
 
   margin-top:10vw;
-  margin-left:20vw;
-  height:9vw;
-  width:30vw;
-  border:1px solid #FFF;
-  color:#FFF;
-  font-size:40px;
+  margin-left:29vw;
+  margin-bottom: 10vw;
+  height:55px;
+  width:40vw;
+
+  border:1px solid #989898;
+  color: #989898;
+  font-size:37px;
   margin-top: 20px;
   text-align: center;
-  line-height: 2em;
+  line-height: 1.6em;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .login_signup_button a  {
  width: 100%;
+
+ color: #989898;
  display: block;
 }
 
@@ -3248,7 +3442,7 @@ width:400px;
   height:13vw;
   width:600px;
   border:none;
-  background-color:#55CB6D;
+  background-color:#214c6f;
   color:#FFF;
   font-size:5vw;
   border-radius:10px;
@@ -3701,7 +3895,7 @@ padding:17px;
   display: none;
   background-color: #263147;
   position: fixed;
-  top:50px;
+  top:40px;
   z-index: 3;
 }
 .select {
@@ -3724,7 +3918,7 @@ padding:17px;
  .header {
 
 width:100%;
-height:50px;
+height:40px;
 position: fixed;
 top:0;
 z-index: 3;
@@ -3734,7 +3928,7 @@ z-index: 3;
 .header h1 {
   margin-left: 100px;
   text-align: center;
-  font-size:16px;
+  font-size:13px;
   color:#FFF;
   font-family:Meiryo, sans-serif;
   line-height: 3.3em;
@@ -3853,6 +4047,7 @@ position: absolute;
      -moz-transform: translate3d(-50%, -50%, 0);
            -ms-transform: translate(-50%, -50%);
           transform: translate3d(-50%, -50%, 0);
+          opacity: 0.5;
 }
 
 .unit:first-child {
@@ -3889,6 +4084,26 @@ position: absolute;
   position: absolute;
   top:25px;
 }
+
+
+.profile-setting-field  {
+
+
+  position:relative;
+left:42px;
+top:20px;
 }
 
+.profile-setting-field input {
 
+  width:250px;
+  height:40px;
+  font-size:13px;
+  background-color:#FFF;
+  border:1px solid #333;
+  border-radius:8px;
+margin-top: 15px;
+  padding-left: 15px;
+}
+
+}

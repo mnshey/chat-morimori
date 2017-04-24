@@ -2,9 +2,9 @@
 
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-<div class="final-form">
-<h1>ログイン</h1>
+  <div class="font-title"><h1>ログイン</h1></div>
 
+<div class="final-form">
 
   <div class="field">
   <label>学籍番号</label>
@@ -22,7 +22,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Log in" , type:"button", id:"btn_submit" %>
+    <%= f.submit "ログイン" , type:"button", id:"btn_submit" %>
   </div>
 
 
