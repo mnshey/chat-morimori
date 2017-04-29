@@ -2,12 +2,12 @@
 
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="font-title"><h1>ログイン</h1></div>
+  <div class="font-title-l"><h1>ログインページ</h1></div>
 
-<div class="final-form">
+<div class="final-form-l">
 
   <div class="field">
-  <label>学籍番号</label>
+  <label>ID(学籍番号・入試番号)</label>
   <input id="area51" name="area1" />
   </div>
 
@@ -21,7 +21,7 @@
     <%= f.password_field :password, autocomplete: "off", value: "123123123"%>
   </div>
 
-  <div class="actions">
+  <div class="actions-l">
     <%= f.submit "ログイン" , type:"button", id:"btn_submit" %>
   </div>
 
