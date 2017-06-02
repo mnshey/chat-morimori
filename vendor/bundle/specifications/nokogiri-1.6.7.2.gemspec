@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib".freeze]
   s.authors = ["Aaron Patterson".freeze, "Mike Dalessio".freeze, "Yoko Harada".freeze, "Tim Elliott".freeze, "Akinori MUSHA".freeze]
   s.date = "2016-01-20"
-  s.description = "Nokogiri (\u{92f8}) is an HTML, XML, SAX, and Reader parser.  Among\nNokogiri's many features is the ability to search documents via XPath\nor CSS3 selectors.\n\nXML is like violence - if it doesn\u{2019}t solve your problems, you are not\nusing enough of it.".freeze
+  s.description = "Nokogiri (\u92F8) is an HTML, XML, SAX, and Reader parser.  Among\nNokogiri's many features is the ability to search documents via XPath\nor CSS3 selectors.\n\nXML is like violence - if it doesn\u2019t solve your problems, you are not\nusing enough of it.".freeze
   s.email = ["aaronp@rubyforge.org".freeze, "mike.dalessio@gmail.com".freeze, "yokolet@gmail.com".freeze, "tle@holymonkey.com".freeze, "knu@idaemons.org".freeze]
   s.executables = ["nokogiri".freeze]
   s.extensions = ["ext/nokogiri/extconf.rb".freeze]
@@ -20,10 +20,10 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT".freeze]
   s.rdoc_options = ["--main".freeze, "README.md".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.2".freeze)
-  s.rubygems_version = "2.6.4".freeze
-  s.summary = "Nokogiri (\u{92f8}) is an HTML, XML, SAX, and Reader parser".freeze
+  s.rubygems_version = "2.6.8".freeze
+  s.summary = "Nokogiri (\u92F8) is an HTML, XML, SAX, and Reader parser".freeze
 
-  s.installed_by_version = "2.6.4" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.6.8" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
