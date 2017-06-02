@@ -3,7 +3,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
   def change
     create_table :users do |t|
       ## Database authenticatable
-      t.string :image,              null: false, default: 'user.jpg'
+      t.string :image,              null: false, default: 'smail.png'
       t.string :username,              unique: true, null: false, default: ""
       t.string :mynumber,              unique: true, null: false, default: ""
       t.string :email,              null: false, default: ""
