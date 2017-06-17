@@ -1,8 +1,9 @@
 class Stamp1Uploader < CarrierWave::Uploader::Base
 
- def filename
+  def filename
     "#{User.find(model.id).mynumber}_#{User.find(model.id).username}_#{secure_token}_1.#{file.extension}" if original_filename.present?
   end
+
 
   protected
   def secure_token
