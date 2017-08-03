@@ -4,7 +4,7 @@ b4b92d66581135d827a764c1e32532123aa46cc6		branch '4-1-stable' of git://github.co
 ab790836968cbe8014a98417c6dfc027413b1173		branch 'drv-improve-reset-token' of git://github.com/plataformatec/devise
 99105903c51eba0971afe0d5e59aa0f697bd3f4a		branch 'gh-pages' of git://github.com/plataformatec/devise
 b68b4002356a1838276632857d2ed6c3f6c5196d		branch 'lm-jruby' of git://github.com/plataformatec/devise
-079ed3b6f8b671acde2dd630d28d21adb010fb3a		branch 'master' of git://github.com/plataformatec/devise
+71fc5b351a8e8473733b0ca29d60c06e43a0efe1		branch 'master' of git://github.com/plataformatec/devise
 b998837592ed56f78a7831b655fae6268c57501e		branch 'test-mongoid' of git://github.com/plataformatec/devise
 f2cd983b4fc62a7abf04d26078d1703239232b40		branch 'v1.0' of git://github.com/plataformatec/devise
 8e0d517cdb07e1c7326923155947706e030fc992		branch 'v1.1' of git://github.com/plataformatec/devise
