@@ -17,7 +17,13 @@
   <%= devise_error_messages! %>
 
 <div class="stamp_edit">
-<div id="preview1" class="editImage_avatar"><img id="uploadFile_preview_0"></div>
+<div id="preview1" class="editImage_avatar">
+  <img id="uploadFile_preview_0"
+       <%if current_user.image.blank? == false %>
+       src="<%= current_user.image %>"
+       <% end %>
+       >
+</div>
 
     <div class="field_edit_avatar">
       <div id="selectButton_z2_0" class="stampSelectbutton_z2_0">プロフィール画像</div>
@@ -31,61 +37,122 @@
 
 <div class="field_edit">
 <h2>01 160px × 160px</h2>
-<div id="preview" class="editImage"><img id="uploadFile_preview"></div>
+<div id="preview" class="editImage">
+      <img id="uploadFile_preview"
+       <%if current_user.stamp_1.blank? == false %>
+       src="<%= current_user.stamp_1 %>"
+       <% end %>
+       >
+</div>
 <br/><div id="selectButton_z2_1" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_1 , :class=>"stampSelectbutton"%>
 </div>
 
 <div class="field_edit">
 <h2>02 160px × 160px</h2>
-<div id="preview" class="editImage"><img id="uploadFile_preview_2"></div>
+<div id="preview" class="editImage">
+  <img id="uploadFile_preview_2"
+       <%if current_user.stamp_2.blank? == false %>
+       src="<%= current_user.stamp_2 %>"
+       <% end %>
+  >
+</div>
 <br/><div id="selectButton_z2_2" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_2 , :class=>"stampSelectbutton"%>
 </div>
 
 <div class="field_edit">
 <h2>03 160px × 160px</h2>
-<div id="preview" class="editImage"><img id="uploadFile_preview_3"></div>
+<div id="preview" class="editImage">
+  <img id="uploadFile_preview_3"
+       <%if current_user.stamp_3.blank? == false %>
+       src="<%= current_user.stamp_3 %>"
+       <% end %>
+  >
+
+</div>
 <br/><div id="selectButton_z2_3" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_3  , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
 <h2>04 160px × 160px</h2>
-<div id="preview" class="editImage"><img id="uploadFile_preview_4"></div>
+<div id="preview" class="editImage">
+  <img id="uploadFile_preview_4"
+       <%if current_user.stamp_4.blank? == false %>
+       src="<%= current_user.stamp_4 %>"
+       <% end %>
+       >
+</div>
 <br/><div id="selectButton_z2_4" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_4  , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
 <h2>05 160px × 160px</h2>
-<div id="preview" class="editImage"><img id="uploadFile_preview_5"></div>
+<div id="preview" class="editImage">
+  <img id="uploadFile_preview_5"
+       <%if current_user.stamp_5.blank? == false %>
+       src="<%= current_user.stamp_5 %>"
+       <% end %>
+       >
+</div>
 <br/><div id="selectButton_z2_5" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_5 , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
 <h2>06 160px × 160px</h2>
-<div id="preview" class="editImage"><img id="uploadFile_preview_6"></div>
+<div id="preview" class="editImage">
+  <img id="uploadFile_preview_6"
+       <%if current_user.stamp_6.blank? == false %>
+       src="<%= current_user.stamp_6 %>"
+       <% end %>
+       >
+</div>
 <br/><div id="selectButton_z2_6" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_6 , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
 <h2>07 160px × 160px</h2>
-<div id="preview" class="editImage"><img id="uploadFile_preview_7"></div>
+<div id="preview" class="editImage">
+  <img id="uploadFile_preview_7"
+       <%if current_user.stamp_7.blank? == false %>
+       src="<%= current_user.stamp_7 %>"
+       <% end %>
+       >
+</div>
 <br/><div id="selectButton_z2_7" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_7 , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
 <h2>08 160px × 160px</h2>
-<div id="preview" class="editImage"><img id="uploadFile_preview_8"></div>
+<div id="preview" class="editImage">
+  <img id="uploadFile_preview_8"
+       <%if current_user.stamp_8.blank? == false %>
+       src="<%= current_user.stamp_8 %>"
+       <% end %>
+       >
+</div>
 <br/><div id="selectButton_z2_8" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_8 , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
 <h2>09 160px × 160px</h2>
-<div id="preview" class="editImage"><img id="uploadFile_preview_9"></div>
+<div id="preview" class="editImage">
+  <img id="uploadFile_preview_9"
+       <%if current_user.stamp_9.blank? == false %>
+       src="<%= current_user.stamp_9 %>"
+       <% end %>
+       >
+</div>
 <br/><div id="selectButton_z2_9" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_9  , :class=>"stampSelectbutton"%>
     </div>
 
 <div class="field_edit">
 <h2>10 160px * 160px</h2>
-<div id="preview" class="editImage"><img id="uploadFile_preview_10"></div>
+<div id="preview" class="editImage">
+  <img id="uploadFile_preview_10"
+       <%if current_user.stamp_10.blank? == false %>
+       src="<%= current_user.stamp_10 %>"
+       <% end %>
+       >
+</div>
 <br/><div id="selectButton_z2_10" class="stampSelectbutton_z2">Select</div><%= f.file_field :stamp_10  , :class=>"stampSelectbutton"%>
     </div>
 
